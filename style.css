@@ -199,18 +199,19 @@ button {
         width: 20%;
         padding: 0.9em
     }
-}
-.todolist {
-    margin: 0.5em 1em;
-}
-.popupbuttons {
-    width: 50%;
-}
-.popupbutton {
-    padding: 0.8em 2em;
-}
-button {
-    padding: 0.8em;
+
+    .todolist {
+        margin: 0.5em 1em;
+    }
+    .popupbuttons {
+        width: 50%;
+    }
+    .popupbutton {
+        padding: 0.8em 2em;
+    }
+    button {
+        padding: 0.8em;
+    }
 }
 @media (min-width: 992px) {
     .todolist ul {
