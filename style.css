@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --deep-dark: rgb(26, 26, 26);
+    --light-dark: rgb(79, 82, 92);
+    --light-blue: rgb(0, 132, 255);
+    --dark-blue: rgb(2, 84, 161);
+    --light: rgb(245, 245, 245);
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+}
+.todo {
+    margin: 100px;
+    width: 1000px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);
+    padding: 50px 30px;
+    border-radius: 5px 5px 0 0;
+}
+.heading {
+    color: var(--light);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.formula {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.whattodo {
+    width: 80%;
+    padding: 5px;
+}
+.add {
+    width: 15%;
+    text-transform: uppercase;
+    background-color: var(--light);
+    border-radius: 5px;
+    padding: 10px 0;
+    transition: background-color .2s, color .3s;
+}
+.add:hover {
+    background-color: var(--light-dark);
+    color: var(--light);
+}
+.todolist {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+.listheading {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.alertinfo {
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin: 5px;
+}
+.todolist ul {
+    width: 80%;
+}
+.todolist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--light);
+    margin: 10px 5px;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+.tools {
+    display: inline-block
+}
+button {
+    padding: 15px 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+/* button:focus {
+    display: none;
+} */
+.complete {
+    color: rgb(0, 185, 71);
+}
+.complete:hover {
+    background-color: rgb(0, 185, 71);
+    color:rgb(245, 245, 245)
+}
+.edit {
+    color:rgb(0, 132, 255);
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+.edit:hover {
+    background-color:rgb(0, 132, 255);
+    color:rgb(245, 245, 245)
+    
+}
+.delete {
+    color:tomato;
+}
+.delete:hover {
+    background-color:tomato;
+    color:rgb(245, 245, 245)
+
+}
+.completed {
+    /* font-size: 12px; */
+    color: var(--light-dark);
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    width: 1000px;
+    background-color: var(--light-dark);
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.popupheading {
+    color: var(--light);
+    margin: 20px;
+}
+.popupinput {
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+}
+.popupbuttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    width: 80%;
+}
+.popupbutton {
+    background-color: var(--light);
+    padding: 8px 100px;
+    border-radius: 5px;
+    border: none;
+    transition: transform .3s;
+}
+.popupinfo {
+    color: var(--light);
+}

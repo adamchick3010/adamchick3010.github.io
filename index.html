@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://kit.fontawesome.com/d4c775de5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bartosz Adamczyk  -->
+    <div class="todo">
+        <div class="header">
+            <h1 class="heading">todo list</h1>
+            <div class="formula">
+                <input type="text" placeholder="Wpisz treść zadania..." class="whattodo">
+                <button class="add">add</button>
+            </div>
+        </div>
+        <div class="todolist">
+            <h3 class="listheading">lista zadań: </h3>
+            <p class="alertinfo">Brak zadań na liście</p>
+            <ul>
+                <!--  -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="popup">
+        <h3 class="popupheading">Edytuj zadanie: </h3>
+        <p class="popupinfo"></p>
+        <input type="text" placeholder="Wprowadź nową treść zadania..." class="popupinput">
+        <div class="popupbuttons">
+            <button class="popupbutton accept">Zatwierdź</button>
+            <button class="popupbutton cancel">Anuluj</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
