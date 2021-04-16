@@ -43,7 +43,7 @@ body {
     font-size: 4rem;
 }
 .formula {
-    width: 80%;
+    width: 100%;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -189,6 +189,7 @@ button {
     .formula {
         flex-direction: row;
         justify-content: space-between;
+        width: 85%;
     }
     .whattodo {
         width: 75%;
