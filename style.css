@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 62.5%;
+}
 :root {
     --deep-dark: rgb(26, 26, 26);
     --light-dark: rgb(79, 82, 92);
@@ -19,8 +22,8 @@ body {
     background-color: var(--light);
 }
 .todo {
-    margin: 100px;
-    width: 1000px;
+    margin: 0px;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
 }
@@ -30,31 +33,34 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);
-    padding: 50px 30px;
+    padding: 5em 0;
     border-radius: 5px 5px 0 0;
 }
 .heading {
     color: var(--light);
-    margin-bottom: 20px;
+    margin-bottom: .7em;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 4rem;
 }
 .formula {
     width: 80%;
-    padding: 10px;
+    padding: 1em;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .whattodo {
-    width: 80%;
-    padding: 5px;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 2em;
 }
 .add {
-    width: 15%;
+    width: 50%;
     text-transform: uppercase;
     background-color: var(--light);
     border-radius: 5px;
-    padding: 10px 0;
+    padding: 1em 0;
     transition: background-color .2s, color .3s;
 }
 .add:hover {
@@ -62,7 +68,7 @@ body {
     color: var(--light);
 }
 .todolist {
-    padding: 30px;
+    padding: 1em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -70,44 +76,42 @@ body {
     background-color: #fff;
 }
 .listheading {
-    font-size: 24px;
+    font-size: 2.4rem;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin: 0.7em 0;
     font-weight: bold;
 }
 .alertinfo {
-    font-size: 18px;
+    font-size: 1.5rem;
     color: var(--dark-blue);
-    margin: 5px;
+    margin: 0.5em;
 }
 .todolist ul {
-    width: 80%;
+    width: 100%;
 }
 .todolist li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 0.3em 0;
     background-color: var(--light);
-    margin: 10px 5px;
-    padding: 15px 15px;
+    margin: 1em 0.3em;
+    padding: 1em 1.3em;
     border-radius: 5px;
+    font-size: 1.4rem;
 }
 .tools {
     display: inline-block
 }
 button {
-    padding: 15px 10px;
+    padding: 0.5em;
     background-color: transparent;
     border: none;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background-color .2s, color .2s;
 }
-/* button:focus {
-    display: none;
-} */
 .complete {
     color: rgb(0, 185, 71);
 }
@@ -142,38 +146,84 @@ button {
 
 .popup {
     position: fixed;
-    bottom: 20px;
-    width: 1000px;
+    bottom: 0px;
+    width: 100%;
     background-color: var(--light-dark);
-    padding: 20px;
+    padding: 1em;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    /* border-radius: 5px 5px 0 0; */
 }
 .popupheading {
     color: var(--light);
-    margin: 20px;
+    margin: 1.5em;
+    font-size: 1.8rem;
 }
 .popupinput {
-    width: 80%;
-    padding: 10px;
-    margin: 20px;
+    width: 95%;
+    padding: 1em;
+    margin: 2em 1em;
 }
 .popupbuttons {
     display: flex;
     justify-content: space-around;
-    margin: 20px;
-    width: 80%;
+    /* flex-direction: column; */
+    align-items: center;
+    margin: 1.5em;
+    width: 90%;
 }
 .popupbutton {
     background-color: var(--light);
-    padding: 8px 100px;
+    padding: 0.5em 1.6em;
     border-radius: 5px;
     border: none;
     transition: transform .3s;
 }
 .popupinfo {
     color: var(--light);
+}
+
+@media (min-width: 768px) {
+    .formula {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .whattodo {
+        width: 75%;
+        margin: 1.5em;
+        border-radius: 5px;
+    }
+    .add {
+        width: 20%;
+        padding: 0.9em
+    }
+}
+.todolist {
+    margin: 0.5em 1em;
+}
+.popupbuttons {
+    width: 50%;
+}
+.popupbutton {
+    padding: 0.8em 2em;
+}
+button {
+    padding: 0.8em;
+}
+@media (min-width: 992px) {
+    .todolist ul {
+        width: 80%;
+    }
+}
+@media (min-width: 1200px) {
+    .todo {
+        margin: 10em 20em 0 20em;
+    }
+}
+@media (min-width: 1200px) {
+    .todo {
+        margin: 12em 30em 0 30em;
+    }
 }
